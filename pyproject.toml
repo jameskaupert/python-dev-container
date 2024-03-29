@@ -1,13 +1,14 @@
-[project]
-name = "<fill-me-in>"
-requires-python = ">=3.12"
-authors = [
-  {name = "<fill-me-in>", email = "<fill-me-in>"},
-]
-description = "<fill-me-in>"
+[tool.poetry]
+name = "app"
+version = "0.1.0"
+description = ""
+authors = ["James Kaupert <jameskaupert@gmail.com>"]
 readme = "README.md"
-license = {file = "LICENSE"}
-keywords = []
+
+
+
+[tool.poetry.dependencies]
+python = "^3.12"
 
 [tool.ruff]
 # Exclude a variety of commonly ignored directories.
@@ -101,4 +102,9 @@ docstring-code-format = false
 # This only has an effect when the `docstring-code-format` setting is
 # enabled.
 docstring-code-line-length = "dynamic"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
 
