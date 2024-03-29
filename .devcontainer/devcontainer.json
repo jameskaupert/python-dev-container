@@ -10,7 +10,7 @@
 	// "forwardPorts": [],
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "pip3 install --user -r requirements.txt",
-	"postCreateCommand": "python src/app.py",
+	"postCreateCommand": "pipx install ruff",
 	// Configure tool-specific properties.
 	"customizations": {
 		"vscode": {
@@ -20,10 +20,13 @@
 				"charliermarsh.ruff"
 			],
 			"settings": {
-				"python.formatting.provider": "none",
 				"[python]": {
 					"editor.formatOnSave": true,
-					"editor.defaultFormatter": "charliermarsh.ruff"
+					"editor.defaultFormatter": "charliermarsh.ruff",
+					"editor.codeActionsOnSave": {
+						"source.fixAll.ruff": "explicit",
+						"source.organizeImports.ruff": "explicit"
+					  }
 				},
 				"[json]": {
 					"editor.defaultFormatter": "vscode.json-language-features"
