@@ -6,12 +6,12 @@
         {
             "label": "run",
             "type": "shell",
-            "command": "python src/app.py"
+            "command": "poetry run python ./src/app.py"
         },
         {
             "label": "test",
             "type": "shell",
-            "command": "python -m unittest tests/test*.py",
+            "command": "poetry run python -m unittest tests/test*.py",
             "problemMatcher": [],
             "group": {
                 "kind": "test",

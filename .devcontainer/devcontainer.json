@@ -10,7 +10,7 @@
 	// "forwardPorts": [],
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "pip3 install --user -r requirements.txt",
-	"postCreateCommand": "pipx install ruff",
+	"postCreateCommand": "bash install-dependencies.sh",
 	// Configure tool-specific properties.
 	"customizations": {
 		"vscode": {
